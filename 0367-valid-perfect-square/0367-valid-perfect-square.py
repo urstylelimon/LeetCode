@@ -1,6 +1,10 @@
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
-        result = num ** 0.5
-        if int(result) == result:
+        if num < 2:
             return True
-        return False
+        else:            
+            for i in range(int(num**0.5) + 1):
+                if i * i == num:
+                    return True
+                    break
+            return False
