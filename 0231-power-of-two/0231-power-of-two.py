@@ -4,7 +4,7 @@ class Solution:
             return True
         else:
             while True:
-                
+                n = n/2
                 if n == 1:
                     return True
                     break
@@ -12,4 +12,4 @@ class Solution:
                 if n<2 and n != 1:
                     return False
                     break
-                n = n/2
+                
