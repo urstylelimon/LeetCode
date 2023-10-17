@@ -7,17 +7,13 @@ class Solution:
         A2 = math.sqrt( (p4[0] - p1[0]) ** 2 + (p4[1] - p1[1])**2 )
         A3 = math.sqrt( (p3[0] - p1[0]) ** 2 + (p3[1] - p1[1])**2 )
 
-
         B1 = math.sqrt( (p3[0] - p2[0]) ** 2 + (p3[1] - p2[1])**2 )
         B2 = math.sqrt( (p4[0] - p2[0]) ** 2 + (p4[1] - p2[1])**2 )
-
 
         C1 = math.sqrt( (p4[0] - p3[0]) ** 2 + (p4[1] - p3[1])**2 )
 
         list1 = [A1,A2,A3,B1,B2,C1]
-
         max_value = max(list1)
-
         max_value_list = []
         count = 0
         for i in list1:
